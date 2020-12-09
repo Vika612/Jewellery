@@ -23,6 +23,11 @@ body {
   position: relative;
   min-width: 320px;
   margin: 0 auto;
+  font-family: $sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  background-color: $white;
+  color: $black-2;
 }
 
 .same-list {
