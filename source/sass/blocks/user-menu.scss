@@ -1,0 +1,42 @@
+.user-menu {
+  display: inline-flex;
+  padding-top: 10px;
+}
+
+.user-menu svg {
+  display: none;
+}
+
+.user-menu a {
+  margin-left: 38px;
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $black-2;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+  }
+}
+
+@media (max-width: 1023px) {
+  .user-menu span,
+  .user-menu a:first-child {
+    display: none;
+  }
+
+  .user-menu svg {
+    display: block;
+    stroke: $white;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
+
+  .user-menu {
+    padding-top: 0;
+  }
+}
