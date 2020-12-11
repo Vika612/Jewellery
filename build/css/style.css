@@ -800,3 +800,81 @@ body {
   .social__link--twitter::before {
     width: 20px;
     height: 18px; } }
+
+.intro {
+  position: relative;
+  max-width: 1366px;
+  min-height: 463px;
+  margin: 0 auto;
+  background: url("../img/bg/main_desk@1x.jpg") no-repeat center;
+  background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url("../img/bg/main_desk@2x.jpg");
+      background-size: 100% 100%; } }
+  .intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(86, 64, 52, 0.7);
+    width: 100%;
+    min-height: 463px; }
+
+.intro__slogan {
+  position: relative;
+  z-index: 7;
+  padding-top: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.intro__slogan p {
+  margin: 0;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #ffffff; }
+
+.intro__slogan em {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.2;
+  color: #ffffff; }
+
+@media (max-width: 1023px) {
+  .intro {
+    background: url("../img/bg/main_tab@1x.jpg") no-repeat center;
+    background-size: cover; } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url("../img/bg/main_tab@2x.jpg");
+      background-size: 100% 100%; } }
+
+@media (max-width: 767px) {
+  .intro {
+    background: url("../img/bg/main_mob@1x.jpg") no-repeat center;
+    background-size: cover; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url("../img/bg/main_mob@2x.jpg");
+      background-size: 100% 100%; } }
+
+@media (max-width: 767px) {
+  .intro__slogan {
+    padding-top: 190px; }
+  .intro__slogan p {
+    font-size: 38px; }
+  .intro__slogan em {
+    font-size: 34px; } }
