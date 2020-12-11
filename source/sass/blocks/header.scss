@@ -32,6 +32,10 @@
   transform: translateX(-50%);
 }
 
+.header__logo--catalog {
+  top: 30px;
+}
+
 .header__wrapper--js .header__logo svg {
   fill: $brown;
 }
