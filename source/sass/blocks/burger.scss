@@ -4,6 +4,8 @@
   width: 25px;
   height: 16px;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 
   &::before,
   &::after {

@@ -1,0 +1,68 @@
+.subscribe h2 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: $serif;
+  font-size: 34px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: $white;
+}
+
+.subscribe p {
+  margin: 0;
+  margin-bottom: 35px;
+  font-weight: 400;
+  color: $grey;
+}
+
+.subscribe__sign-up {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $white;
+}
+
+.subscribe__sign-up input,
+.subscribe__sign-up button {
+  border: none;
+  background-color: transparent;
+}
+
+.subscribe__sign-up input {
+  width: 100%;
+  padding: 10px 0;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $white;
+  }
+}
+
+.subscribe__sign-up input::placeholder {
+  font-size: 14px;
+  line-height: 1.5;
+  color: $grey;
+}
+
+.subscribe__sign-up button {
+  width: 170px;
+  padding: 0;
+  color: $white;
+  cursor: pointer;
+}
+
+.subscribe__sign-up button svg {
+  margin-left: 10px;
+  stroke: $white;
+}
+
+@media (max-width: 767px) {
+  .subscribe h2 {
+    max-width: 215px;
+  }
+
+  .subscribe p {
+    max-width: 230px;
+  }
+}
