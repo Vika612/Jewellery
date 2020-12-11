@@ -404,11 +404,6 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
-.form-search button {
-  padding: 0;
-  border: none;
-  background-color: transparent; }
-
 .form-search input {
   padding: 12px;
   border: none;
