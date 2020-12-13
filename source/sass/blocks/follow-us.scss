@@ -1,0 +1,141 @@
+.follow-us {
+  margin-bottom: 130px;
+}
+
+.follow-us h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.follow-us a {
+  max-width: 75px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  display: flex;
+  color: $black-2;
+  border-bottom: 1px solid $brown;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+    transform: scaleX(1.1);
+    transition: 0.6s;
+  }
+}
+
+.follow-us__list {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.follow-us__list img {
+  display: block;
+}
+
+.follow-us__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.follow-us__item--second {
+  margin: 0 15px;
+}
+
+.follow-us__item--third {
+  align-items: flex-start;
+}
+
+.follow-us__item--fourth {
+  align-items: flex-end;
+}
+
+@media (max-width: 1170px) {
+  .follow-us__item--fourth {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .follow-us {
+    margin-bottom: 77px;
+  }
+
+  .follow-us span {
+    font-size: 42px;
+  }
+
+  .follow-us__item--second {
+    margin: 0 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .follow-us {
+    margin-bottom: 65px;
+  }
+
+  .follow-us__list {
+    min-width: 280px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  .follow-us__item {
+    overflow: hidden;
+  }
+
+  .follow-us__item--first {
+    width: 45%;
+  }
+
+  .follow-us__item--first > picture img {
+    min-width: 130px;
+    margin-bottom: 15px;
+  }
+
+  .follow-us__item--second {
+    position: relative;
+    width: 50%;
+    margin: 0 0 20px 0;
+  }
+
+  .follow-us__item--second img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 145px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .follow-us__item--third {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .follow-us__item--third > picture:first-child img {
+    min-width: 145px;
+    height: 121px;
+    margin-left: 15px;
+    object-fit: cover;
+  }
+
+  .follow-us__item--third > picture:last-child img {
+    min-width: 130px;
+    height: 115px;
+    object-fit: cover;
+  }
+
+  .follow-us__item--fourth {
+    display: none;
+  }
+}

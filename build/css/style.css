@@ -524,7 +524,11 @@ body {
   line-height: 1.55;
   color: #1d1613; }
   .menu-header__navigation a:hover, .menu-header__navigation a:focus {
-    color: #a87b62; }
+    color: #a87b62;
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+    -webkit-transition: 0.6s;
+    transition: 0.6s; }
 
 @media (max-width: 1023px) {
   .menu-header {
@@ -541,6 +545,10 @@ body {
     font-size: 24px;
     color: #ffffff; }
     .menu-header__navigation a:hover, .menu-header__navigation a:focus {
+      -webkit-transform: none;
+              transform: none;
+      -webkit-transition: none;
+      transition: none;
       color: #ffffff;
       opacity: 0.6; }
   .menu-header__info,
@@ -928,6 +936,9 @@ body {
   .intro__slogan--catalog em {
     font-size: 22px; } }
 
+.faq {
+  margin-bottom: 123px; }
+
 .faq__wrapper {
   max-width: 1000px; }
 
@@ -1013,6 +1024,8 @@ body {
           transform: rotate(-45deg); }
 
 @media (max-width: 1023px) {
+  .faq {
+    margin-bottom: 70px; }
   .faq__item {
     padding: 44px 20px 44px 48px; }
   .faq__item p {
@@ -1026,6 +1039,8 @@ body {
     right: 38px; } }
 
 @media (max-width: 767px) {
+  .faq {
+    margin-bottom: 60px; }
   .faq__wrapper h2 {
     margin-bottom: 35px; }
   .faq__item {
@@ -1058,3 +1073,131 @@ body {
   .faq__item--opened button::after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); } }
+
+.follow-us {
+  margin-bottom: 130px; }
+
+.follow-us h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center; }
+
+.follow-us a {
+  max-width: 75px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1d1613;
+  border-bottom: 1px solid #a87b62; }
+  .follow-us a:hover, .follow-us a:focus {
+    color: #a87b62;
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+    -webkit-transition: 0.6s;
+    transition: 0.6s; }
+
+.follow-us__list {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.follow-us__list img {
+  display: block; }
+
+.follow-us__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.follow-us__item--second {
+  margin: 0 15px; }
+
+.follow-us__item--third {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.follow-us__item--fourth {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+@media (max-width: 1170px) {
+  .follow-us__item--fourth {
+    margin-left: 15px; } }
+
+@media (max-width: 1023px) {
+  .follow-us {
+    margin-bottom: 77px; }
+  .follow-us span {
+    font-size: 42px; }
+  .follow-us__item--second {
+    margin: 0 18px; } }
+
+@media (max-width: 767px) {
+  .follow-us {
+    margin-bottom: 65px; }
+  .follow-us__list {
+    min-width: 280px;
+    margin-top: 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .follow-us__item {
+    overflow: hidden; }
+  .follow-us__item--first {
+    width: 45%; }
+  .follow-us__item--first > picture img {
+    min-width: 130px;
+    margin-bottom: 15px; }
+  .follow-us__item--second {
+    position: relative;
+    width: 50%;
+    margin: 0 0 20px 0; }
+  .follow-us__item--second img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 145px;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .follow-us__item--third {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .follow-us__item--third > picture:first-child img {
+    min-width: 145px;
+    height: 121px;
+    margin-left: 15px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .follow-us__item--third > picture:last-child img {
+    min-width: 130px;
+    height: 115px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .follow-us__item--fourth {
+    display: none; } }
