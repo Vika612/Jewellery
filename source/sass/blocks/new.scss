@@ -1,0 +1,91 @@
+.new__wrapper {
+  position: relative;
+}
+
+.new__slider {
+  margin-top: 60px;
+  padding-bottom: 40px;
+}
+
+.new h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: $serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.new__link {
+  max-width: 87px;
+  margin: 0 auto;
+  display: flex;
+  color: $black-2;
+  border-bottom: 1px solid $brown;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+    transform: scaleX(1.1);
+    transition: 0.6s;
+  }
+}
+
+.new__item-count {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.new__item-count .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  color: $grey;
+  border: none;
+  opacity: 1;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+    text-decoration: underline;
+  }
+}
+
+.new__item-count .swiper-pagination-bullet-active {
+  color: $black-2;
+  background: transparent;
+}
+
+.new__item-button {
+  position: absolute;
+  top: 35px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.new__item-prev-button {
+  left: 0;
+}
+
+.new__item-next-button {
+  right: 15px;
+}
+
+.new__item-button svg {
+  width: 30px;
+  height: 11px;
+  stroke: $brown;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
