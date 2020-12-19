@@ -889,6 +889,7 @@ body {
 
 @media (max-width: 1023px) {
   .intro {
+    margin-bottom: 70px;
     background: url("../img/bg/main_tab@1x.jpg") no-repeat center;
     background-size: cover; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -906,6 +907,7 @@ body {
 
 @media (max-width: 767px) {
   .intro {
+    margin-bottom: 60px;
     background: url("../img/bg/main_mob@1x.jpg") no-repeat center;
     background-size: cover; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -1545,7 +1547,7 @@ button.swiper-pagination-bullet {
 
 .new__slider {
   margin-top: 60px;
-  padding-bottom: 40px; }
+  padding-bottom: 30px; }
 
 .new h2 {
   margin: 0;
@@ -1573,7 +1575,6 @@ button.swiper-pagination-bullet {
     transition: 0.6s; }
 
 .new__item-count {
-  margin-top: 30px;
   text-align: center; }
 
 .new__item-count .swiper-pagination-bullet {
@@ -1616,6 +1617,33 @@ button.swiper-pagination-bullet {
   .new__item-button svg:hover, .new__item-button svg:focus {
     opacity: 0.6; }
 
+@media (max-width: 1023px) {
+  .new__slider {
+    margin-top: 50px;
+    padding-bottom: 20px; }
+  .new__item img {
+    width: 324px;
+    height: 340px; }
+  .new__item-prev-button {
+    top: 40px;
+    left: 45px; }
+  .new__item-next-button {
+    top: 40px;
+    right: 45px; }
+  .new__item-button svg {
+    width: 36px;
+    height: 15px; } }
+
+@media (max-width: 767px) {
+  .new__slider {
+    margin-top: 45px;
+    padding-bottom: 15px; }
+  .new__item img {
+    width: 100%;
+    height: auto; }
+  .new__item-button {
+    display: none; } }
+
 .product a {
   max-width: 270px;
   padding-bottom: 20px;
@@ -1644,8 +1672,19 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   line-height: 1.2; }
 
+@media (max-width: 1023px) {
+  .product a {
+    max-width: 324px; } }
+
+@media (max-width: 767px) {
+  .product a {
+    max-width: 130px; }
+  .product h3 {
+    margin-top: 10px;
+    text-align: center; } }
+
 .blog {
-  margin-top: 80px;
+  margin-top: 120px;
   margin-bottom: 90px; }
 
 .blog h2 {
@@ -1740,7 +1779,8 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1023px) {
   .blog {
-    margin-bottom: 25px; }
+    margin-top: 70px;
+    margin-bottom: 20px; }
   .blog__list {
     height: auto;
     -ms-flex-wrap: nowrap;
@@ -1782,6 +1822,9 @@ button.swiper-pagination-bullet {
       background-image: url("../img/blog/trends_tab@2x.jpg"); } }
 
 @media (max-width: 767px) {
+  .blog {
+    margin-top: 55px;
+    margin-bottom: 20px; }
   .blog__list {
     margin-top: 50px; }
   .blog__item,
