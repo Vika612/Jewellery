@@ -1645,7 +1645,6 @@ button.swiper-pagination-bullet {
     display: none; } }
 
 .product a {
-  max-width: 270px;
   padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1672,13 +1671,7 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   line-height: 1.2; }
 
-@media (max-width: 1023px) {
-  .product a {
-    max-width: 324px; } }
-
 @media (max-width: 767px) {
-  .product a {
-    max-width: 130px; }
   .product h3 {
     margin-top: 10px;
     text-align: center; } }
