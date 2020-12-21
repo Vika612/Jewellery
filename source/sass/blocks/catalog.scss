@@ -1,0 +1,34 @@
+.catalog {
+  max-width: 870px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog__item {
+  margin-bottom: 14px;
+}
+
+.catalog__item img {
+  width: 270px;
+  height: 272px;
+}
+
+@media (max-width: 1023px) {
+  .catalog__item img {
+    width: 206px;
+    height: 208px;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog__item {
+    max-width: 130px;
+    margin-bottom: 9px;
+  }
+
+  .catalog__item img {
+    width: 130px;
+    height: 136px;
+  }
+}

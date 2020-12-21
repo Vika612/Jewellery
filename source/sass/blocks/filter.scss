@@ -1,0 +1,391 @@
+.filter {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__block {
+  min-width: 250px;
+  padding: 25px 25px 20px;
+  border: 1px solid $brown;
+  border-bottom: none;
+
+  &:hover,
+  &:focus-within {
+    background-color: $light-brown;
+  }
+}
+
+.filter__block--price {
+  margin-bottom: 35px;
+  border-bottom: 1px solid $brown;
+}
+
+.filter__title {
+  position: relative;
+  display: block;
+  color: $black-2;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+    width: 11px;
+    height: 1px;
+    background-color: $brown;
+    content: "";
+  }
+
+  &::before {
+    right: 0;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    right: 7px;
+    transform: rotate(45deg);
+  }
+}
+
+.filter input[type="checkbox"]:checked ~ .filter__title::before {
+  transform: rotate(45deg);
+}
+
+.filter input[type="checkbox"]:checked ~ .filter__title::after {
+  transform: rotate(-45deg);
+}
+
+.filter__checkbox-item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 25px;
+
+  &:focus-within {
+    outline: rgb(59, 153, 252) auto 5px;
+  }
+}
+
+.filter__checkbox-label {
+  font-size: 14px;
+  line-height: 1.2;
+  color: $black-2;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+  }
+}
+
+.filter__checkbox-indicator {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $brown;
+}
+
+.filter__checkbox-item input[type="checkbox"]:checked + .filter__checkbox-indicator {
+  background-color: $brown;
+}
+
+.filter__list {
+  margin-left: 9px;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.filter__list,
+.filter__range,
+.filter__price-controls {
+  display: none;
+}
+
+.nojs ~ .filter__list,
+.nojs ~ .filter__range,
+.nojs ~ .filter__price-controls {
+  display: block;
+}
+
+.filter input[id="product"]:checked ~ .filter__list,
+.filter input[id="material"]:checked ~ .filter__list,
+.filter input[id="collection"]:checked ~ .filter__list,
+.filter input[id="price"]:checked ~ .filter__range {
+  display: block;
+}
+
+.filter input[id="price"]:checked ~ .filter__price-controls {
+  margin-top: 0;
+  display: flex;
+}
+
+.filter__range {
+  position: relative;
+  margin: 25px 0 10px;
+}
+
+.filter__scale {
+  position: relative;
+  height: 1px;
+  background-color: $light-orange;
+
+  &::after {
+    position: absolute;
+    left: 30%;
+    height: 1px;
+    width: 45%;
+    background-color: $brown;
+    content: "";
+  }
+}
+
+.filter__range-toggle {
+  position: absolute;
+  top: -7px;
+  width: 15px;
+  height: 15px;
+  background-color: $brown;
+  border: none;
+  border-radius: 50%;
+}
+
+.filter__range-toggle-min {
+  left: 45px;
+}
+
+.filter__range-toggle-max {
+  right: 35px;
+}
+
+.filter__price-controls label {
+  font-size: 14px;
+}
+
+.filter__min-price {
+  padding-left: 37px;
+}
+
+.filter__max-price {
+  padding-left: 60px;
+}
+
+.filter__min-price input,
+.filter__max-price input {
+  width: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.filter__submit,
+.filter__reset {
+  max-width: 250px;
+  padding: 25px;
+  background-color: transparent;
+  border: 1px solid $brown;
+  cursor: pointer;
+}
+
+.filter__submit {
+  margin-bottom: 25px;
+  color: $white;
+  background-color: $brown;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+}
+
+.filter__reset {
+  color: $black-2;
+
+  &:hover,
+  &:focus {
+    background-color: $light-brown;
+  }
+}
+
+@media (max-width: 1023px) {
+  .filter {
+    z-index: 2;
+    width: 425px;
+    padding-left: 0;
+    padding-bottom: 40px;
+    background-color: $white;
+    box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
+    display: none;
+  }
+
+  .filter--nojs {
+    display: block;
+  }
+
+  .filter--opened {
+    position: absolute;
+    z-index: 13;
+    top: -410px;
+    left: 0;
+    display: flex;
+  }
+
+  .filter__block {
+    padding: 35px 40px 35px 22px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .filter__block:first-child {
+    border-top: none;
+  }
+
+  .filter__block--price {
+    margin-bottom: 40px;
+  }
+
+  .filter__title {
+    font-size: 18px;
+
+    &::before,
+    &::after {
+      width: 18px;
+    }
+
+    &::after {
+      right: 12px;
+    }
+  }
+
+  .filter__checkbox-item {
+    margin-bottom: 19px;
+    padding-left: 30px;
+  }
+
+  .filter__checkbox-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .filter__checkbox-label {
+    font-size: 16px;
+  }
+
+  .filter__checkbox-indicator {
+    top: 2px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .filter__range {
+    margin: 30px 0 15px;
+  }
+
+  .filter__scale {
+    &::after {
+      left: 15%;
+      width: 50%;
+    }
+  }
+
+  .filter__range-toggle {
+    top: -9px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .filter__range-toggle-min {
+    left: 54px;
+  }
+
+  .filter__range-toggle-max {
+    right: 115px;
+  }
+
+  .filter__price-controls label {
+    font-size: 16px;
+  }
+
+  .filter__min-price {
+    padding-left: 45px;
+  }
+
+  .filter__max-price {
+    padding-left: 120px;
+  }
+
+  .filter__min-price input,
+  .filter__max-price input {
+    width: 35px;
+    font-size: 16px;
+  }
+
+  .filter__submit,
+  .filter__reset {
+    min-width: 362px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .filter {
+    width: 295px;
+    padding-left: 24px;
+    padding-bottom: 70px;
+  }
+
+  .filter--opened {
+    top: -315px;
+  }
+
+  .filter__block {
+    padding: 24px 15px 24px 22px;
+  }
+
+  .filter__block--price {
+    margin-bottom: 25px;
+  }
+
+  .filter__range {
+    margin: 36px 0 15px;
+  }
+
+  .filter__scale {
+    &::after {
+      width: 60%;
+    }
+  }
+
+  .filter__range-toggle-min {
+    left: 30px;
+  }
+
+  .filter__range-toggle-max {
+    right: 50px;
+  }
+
+  .filter__min-price {
+    padding-left: 20px;
+  }
+
+  .filter__max-price {
+    padding-left: 85px;
+  }
+
+  .filter__submit,
+  .filter__reset {
+    min-width: 230px;
+    margin: 5px 20px 15px;
+  }
+}

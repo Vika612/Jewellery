@@ -26,6 +26,7 @@
 
 .intro--catalog {
   min-height: 261px;
+  margin-bottom: 80px;
   background: url("../img/bg/catalog_desk@1x.jpg") no-repeat center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -91,6 +92,7 @@
   }
 
   .intro--catalog {
+    margin-bottom: 50px;
     background: url("../img/bg/catalog_tab@1x.jpg") no-repeat center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -113,6 +115,7 @@
   }
 
   .intro--catalog {
+    margin-bottom: 40px;
     background: url("../img/bg/catalog_mob@1x.jpg") no-repeat center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

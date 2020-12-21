@@ -17,6 +17,55 @@
 }());
 
 
+/* FAQ */
+
+(function () {
+  var faqList = document.querySelector('.faq__list');
+
+  faqList.classList.remove('faq__list--nojs');
+
+  if (faqList) {
+    var toggleFaqItem = function (item) {
+      item.classList.toggle('faq__item--opened');
+    };
+
+    faqList.addEventListener('click', function (evt) {
+      var faqItem = evt.target.closest('li');
+      toggleFaqItem(faqItem);
+    });
+  }
+}());
+
+
+/* FILTER */
+
+(function () {
+  var filter = document.querySelector('.filter');
+  var filterToggle = document.querySelector('#filter-toggle');
+  var filterToggleLabel = document.querySelector('.main-catalog__toggle');
+  var filterAccList = document.querySelectorAll('.filter-acc');
+
+  if (filter) {
+    filter.classList.remove('filter--nojs');
+
+    filterToggle.addEventListener('change', function () {
+      if (filterToggle.checked) {
+        filter.classList.add('filter--opened');
+        filterToggleLabel.classList.add('main-catalog__toggle--opened');
+      } else {
+        filter.classList.remove('filter--opened');
+        filterToggleLabel.classList.remove('main-catalog__toggle--opened');
+      }
+    });
+
+    for (var i = 0; i < filterAccList.length; i++) {
+      var filterAcc = filterAccList[i];
+      filterAcc.classList.remove('nojs');
+    }
+  }
+}());
+
+
 /* SLIDER */
 
 (function () {
@@ -67,24 +116,4 @@
     },
   });
   swiper.slideNext();
-}());
-
-
-/* FAQ */
-
-(function () {
-  var faqList = document.querySelector('.faq__list');
-
-  faqList.classList.remove('faq__list--nojs');
-
-  if (faqList) {
-    var toggleFaqItem = function (item) {
-      item.classList.toggle('faq__item--opened');
-    };
-
-    faqList.addEventListener('click', function (evt) {
-      var faqItem = evt.target.closest('li');
-      toggleFaqItem(faqItem);
-    });
-  }
 }());

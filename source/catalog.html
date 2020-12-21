@@ -90,6 +90,273 @@
           </div>
         </div>
       </section>
+
+      <div class="main-catalog container">
+        <label class="main-catalog__toggle" for="filter-toggle">
+          <span>Filter</span>
+          <input class="visually-hidden" type="checkbox" name="filter-toggle" id="filter-toggle">
+        </label>
+
+        <form class="main-catalog__filter filter filter--nojs" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="filter__block">
+            <input class="visually-hidden filter-acc nojs" type="checkbox" name="product" id="product" checked>
+            <label class="filter__title" for="product">Product</label>
+            <ul class="filter__list filter__list--product same-list">
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label">
+                  <input class="visually-hidden" type="checkbox" name="necklaces">
+                  <span class="filter__checkbox-indicator"></span>
+                  Necklaces
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label">
+                  <input class="visually-hidden" type="checkbox" name="chokers">
+                  <span class="filter__checkbox-indicator"></span>
+                  Chokers
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label">
+                  <input class="visually-hidden" type="checkbox" name="rings">
+                  <span class="filter__checkbox-indicator"></span>
+                  Rings
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label">
+                  <input class="visually-hidden" type="checkbox" name="earrings">
+                  <span class="filter__checkbox-indicator"></span>
+                  Earrings
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter__block">
+            <input class="visually-hidden filter-acc nojs" type="checkbox" name="material" id="material" checked>
+            <label class="filter__title" for="material">Material</label>
+            <ul class="filter__list filter__list--material same-list">
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label">
+                  <input class="visually-hidden" type="checkbox" name="gold">
+                  <span class="filter__checkbox-indicator"></span>
+                  Gold
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label">
+                  <input class="visually-hidden" type="checkbox" name="silver">
+                  <span class="filter__checkbox-indicator"></span>
+                  Silver
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter__block">
+            <input class="visually-hidden filter-acc nojs" type="checkbox" name="collection" id="collection" checked>
+            <label class="filter__title" for="collection">Collection</label>
+            <ul class="filter__list filter__list--collection same-list">
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label">
+                  <input class="visually-hidden" type="checkbox" name="pink-flamingo">
+                  <span class="filter__checkbox-indicator"></span>
+                  Pink flamingo
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label">
+                  <input class="visually-hidden" type="checkbox" name="dreams">
+                  <span class="filter__checkbox-indicator"></span>
+                  Dreams
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter__block filter__block--price">
+            <input class="visually-hidden filter-acc nojs" type="checkbox" name="price" id="price" checked>
+            <label class="filter__title" for="price">Price</label>
+            <div class="filter__range">
+              <div class="filter__scale"></div>
+              <div class="scale"></div>
+              <button class="filter__range-toggle filter__range-toggle-min" type="button"><span class="visually-hidden">min price</span></button>
+              <button class="filter__range-toggle filter__range-toggle-max" type="button"><span class="visually-hidden">max price</span></button>
+            </div>
+            <div class="filter__price-controls">
+              <label class="filter__min-price">$ <input type="number" name="min-price" value="55"></label>
+              <label class="filter__max-price">$ <input type="number" name="max-price" value="155"></label>
+            </div>
+          </div>
+
+          <button class="filter__submit" type="submit" name="submit">Apply</button>
+          <button class="filter__reset" type="reset" name="reset">Clear All</button>
+        </form>
+
+        <ul class="main-catalog__catalog catalog same-list">
+          <li class="catalog__item product">
+            <a href="card.html">
+              <picture>
+                <!--1x: 270x272; 2x: 540x544-->
+                <source type="image/webp" srcset="img/cards/double-pearl-earrings@1x.webp 1x, img/cards/double-pearl-earrings@2x.webp 2x">
+                <img src="img/cards/double-pearl-earrings@1x.jpg" srcset="img/cards/double-pearl-earrings@2x.jpg 2x" width="270" height="272" alt="double-pearl-earrings">
+              </picture>
+              <h3>Double pearl earrings</h3>
+              <span>$ 115</span>
+            </a>
+          </li>
+
+          <li class="catalog__item product">
+            <a href="card.html">
+              <picture>
+                <!--1x: 270x272; 2x: 540x544-->
+                <source type="image/webp" srcset="img/cards/black-choker-gold-bead@1x.webp 1x, img/cards/black-choker-gold-bead@2x.webp 2x">
+                <img src="img/cards/black-choker-gold-bead@1x.jpg" srcset="img/cards/black-choker-gold-bead@2x.jpg 2x" width="270" height="272" alt="black-choker-gold-bead">
+              </picture>
+              <h3>Choker with gold bead</h3>
+              <span>$ 55</span>
+            </a>
+          </li>
+
+          <li class="catalog__item product">
+            <a href="card.html">
+              <picture>
+                <!--1x: 270x272; 2x: 540x544-->
+                <source type="image/webp" srcset="img/cards/gold-layered-necklace@1x.webp 1x, img/cards/gold-layered-necklace@2x.webp 2x">
+                <img src="img/cards/gold-layered-necklace@1x.jpg" srcset="img/cards/gold-layered-necklace@2x.jpg 2x" width="270" height="272" alt="gold-layered-necklace">
+              </picture>
+              <h3>Gold layered necklace</h3>
+              <span>$ 155</span>
+            </a>
+          </li>
+
+          <li class="catalog__item product">
+            <a href="card.html">
+              <picture>
+                <!--1x: 270x272; 2x: 540x544-->
+                <source type="image/webp" srcset="img/cards/blue-gemstone-pendant@1x.webp 1x, img/cards/blue-gemstone-pendant@2x.webp 2x">
+                <img src="img/cards/blue-gemstone-pendant@1x.jpg" srcset="img/cards/blue-gemstone-pendant@2x.jpg 2x" width="270" height="272" alt="blue-gemstone-pendant">
+              </picture>
+              <h3>Blue gemstone pendant</h3>
+              <span>$ 105</span>
+            </a>
+          </li>
+
+          <li class="catalog__item product">
+            <a href="card.html">
+              <picture>
+                <!--1x: 270x272; 2x: 540x544-->
+                <source type="image/webp" srcset="img/cards/boho-earrings@1x.webp 1x, img/cards/boho-earrings@2x.webp 2x">
+                <img src="img/cards/boho-earrings@1x.jpg" srcset="img/cards/boho-earrings@2x.jpg 2x" width="270" height="272" alt="boho-earrings">
+              </picture>
+              <h3>Boho earrings</h3>
+              <span>$ 75</span>
+            </a>
+          </li>
+
+          <li class="catalog__item product">
+            <a href="card.html">
+              <picture>
+                <!--1x: 270x272; 2x: 540x544-->
+                <source type="image/webp" srcset="img/cards/bird-necklace@1x.webp 1x, img/cards/bird-necklace@2x.webp 2x">
+                <img src="img/cards/bird-necklace@1x.jpg" srcset="img/cards/bird-necklace@2x.jpg 2x" width="270" height="272" alt="bird-necklace">
+              </picture>
+              <h3>Gold bird necklace</h3>
+              <span>$ 135</span>
+            </a>
+          </li>
+
+          <li class="catalog__item product">
+            <a href="card.html">
+              <picture>
+                <!--1x: 270x272; 2x: 540x544-->
+                <source type="image/webp" srcset="img/cards/black-leather-choker-necklace@1x.webp 1x, img/cards/black-leather-choker-necklace@2x.webp 2x">
+                <img src="img/cards/black-leather-choker-necklace@1x.jpg" srcset="img/cards/black-leather-choker-necklace@2x.jpg 2x" width="270" height="272" alt="black-leather-choker-necklace">
+              </picture>
+              <h3>Black leather choker</h3>
+              <span>$ 85</span>
+            </a>
+          </li>
+
+          <li class="catalog__item product">
+            <a href="card.html">
+              <picture>
+                <!--1x: 270x272; 2x: 540x544-->
+                <source type="image/webp" srcset="img/cards/purple-gemstone-necklace@1x.webp 1x, img/cards/purple-gemstone-necklace@2x.webp 2x">
+                <img src="img/cards/purple-gemstone-necklace@1x.jpg" srcset="img/cards/purple-gemstone-necklace@2x.jpg 2x" width="270" height="272" alt="purple-gemstone-necklace">
+              </picture>
+              <h3>Necklace with amethyst</h3>
+              <span>$ 145</span>
+            </a>
+          </li>
+
+          <li class="catalog__item product">
+            <a href="card.html">
+              <picture>
+                <!--1x: 270x272; 2x: 540x544-->
+                <source type="image/webp" srcset="img/cards/elephant-earrings@1x.webp 1x, img/cards/elephant-earrings@2x.webp 2x">
+                <img src="img/cards/elephant-earrings@1x.jpg" srcset="img/cards/elephant-earrings@2x.jpg 2x" width="270" height="272" alt="elephant-earrings">
+              </picture>
+              <h3>Elephant earrings</h3>
+              <span>$ 95</span>
+            </a>
+          </li>
+
+          <li class="catalog__item product">
+            <a href="card.html">
+              <picture>
+                <!--1x: 270x272; 2x: 540x544-->
+                <source type="image/webp" srcset="img/cards/threader-necklace-closeup@1x.webp 1x, img/cards/threader-necklace-closeup@2x.webp 2x">
+                <img src="img/cards/threader-necklace-closeup@1x.jpg" srcset="img/cards/threader-necklace-closeup@2x.jpg 2x" width="270" height="272" alt="threader-necklace-closeup">
+              </picture>
+              <h3>Threader necklace</h3>
+              <span>$ 115</span>
+            </a>
+          </li>
+
+          <li class="catalog__item product">
+            <a href="card.html">
+              <picture>
+                <!--1x: 270x272; 2x: 540x544-->
+                <source type="image/webp" srcset="img/cards/origami-crane-necklace@1x.webp 1x, img/cards/origami-crane-necklace@2x.webp 2x">
+                <img src="img/cards/origami-crane-necklace@1x.jpg" srcset="img/cards/origami-crane-necklace@2x.jpg 2x" width="270" height="272" alt="origami-crane-necklace">
+              </picture>
+              <h3>Origami crane necklace</h3>
+              <span>$ 105</span>
+            </a>
+          </li>
+
+          <li class="catalog__item product">
+            <a href="card.html">
+              <picture>
+                <!--1x: 270x272; 2x: 540x544-->
+                <source type="image/webp" srcset="img/cards/marble-earrings@1x.webp 1x, img/cards/marble-earrings@2x.webp 2x">
+                <img src="img/cards/marble-earrings@1x.jpg" srcset="img/cards/marble-earrings@2x.jpg 2x" width="270" height="272" alt="marble-earrings">
+              </picture>
+              <h3>Marble earrings</h3>
+              <span>$ 95</span>
+            </a>
+          </li>
+        </ul>
+        <div class="main-catalog__overlay"></div>
+      </div>
+
+      <div class="paginator">
+        <div class="paginator__container container">
+          <div class="paginator__wrapper">
+            <a href="#" class="paginator__link paginator__link--prev">Previous</a>
+            <ul class="paginator__list same-list">
+              <li><a href="#" class="paginator__link paginator__link--active">1</a></li>
+              <li><a href="#" class="paginator__link">2</a></li>
+              <li><a href="#" class="paginator__link">3</a></li>
+              <li><a href="#" class="paginator__link">4</a></li>
+              <li><a href="#" class="paginator__link">5</a></li>
+            </ul>
+            <a href="#" class="paginator__link paginator__link--next">Next</a>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
