@@ -16,7 +16,7 @@
 <body>
   <div style="display: none;">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-left" viewBox="0 0 30 11">
-      <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1"/>
+      <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1" stroke="#A87B62"/>
       </symbol><symbol id="icon-arrow-right" viewBox="0 0 30 11">
       <path d="M0 5.5H29M29 5.5L23.5135 1M29 5.5L23.5135 10"/>
       </symbol><symbol id="icon-cart" viewBox="0 0 20 18">
@@ -43,7 +43,7 @@
             <input type="search" id="search" name="search" placeholder="Type here to search">
           </form>
 
-          <a class="header__logo" aria-label="Jewellery logo">
+          <a class="header__logo header__logo--catalog" href="index.html" aria-label="Jewellery logo">
             <svg width="66" height="66" fill="none" viewBox="0 0 66 66">
               <use xlink:href="#icon-logo"></use>
             </svg>
@@ -64,10 +64,10 @@
         <nav class="header__menu menu-header">
           <ul class="menu-header__navigation same-list">
             <li><a href="#">What’s new</a></li>
-            <li><a href="catalog.html">Chokers</a></li>
-            <li><a href="catalog.html">Necklaces</a></li>
-            <li><a href="catalog.html">Rings</a></li>
-            <li><a href="catalog.html">Earrings</a></li>
+            <li><a href="#">Chokers</a></li>
+            <li><a href="#">Necklaces</a></li>
+            <li><a href="#">Rings</a></li>
+            <li><a href="#">Earrings</a></li>
           </ul>
 
           <ul class="menu-header__info same-list">
@@ -81,20 +81,12 @@
     </header>
 
     <main>
-      <h1 class="visually-hidden">Online jewelry store "Jewellery"</h1>
-      <section class="intro">
-        <div class="container">
-          <div class="intro__slogan">
-            <p>PERFECTION</p>
-            <em>made to be yours</em>
-          </div>
-        </div>
-      </section>
+
 
 
       <section class="new">
         <div class="new__wrapper container">
-          <h2>New In</h2>
+          <h2>You May Also Like</h2>
           <a class="new__link" href="catalog.html">Shop Now</a>
           <div class="new__slider swiper-container">
             <ul class="new__list same-list swiper-wrapper">
@@ -121,7 +113,7 @@
                 </a>
               </li>
               <li class="new__item product swiper-slide">
-                <a href="">
+                <a href="#">
                   <picture>
                     <!--1x: 270x284; 2x: 540x568-->
                     <source type="image/webp" srcset="img/cards/dainty-gold-necklace@1x.webp 1x, img/cards/dainty-gold-necklace@2x.webp 2x">
@@ -247,115 +239,6 @@
               <use xlink:href="#icon-arrow-right"></use>
             </svg>
           </button>
-        </div>
-      </section>
-
-      <section class="blog">
-        <div class="container">
-          <h2>Blog</h2>
-          <a class="blog__link" href="#">Read All</a>
-          <ul class="blog__list same-list">
-            <li class="blog__item blog__item--care">
-              <article class="blog__article blog-article">
-                <h3>How to care for your jewellery</h3>
-                <a href="#">Read Article</a>
-                <time datetime="2019-09-30">September 30, 2019</time>
-              </article>
-            </li>
-            <li class="blog__item blog__item--power">
-              <article class="blog__article blog-article">
-                <h3>Power of crystals</h3>
-                <a href="#">Read Article</a>
-                <time datetime="2019-09-23">September 23, 2019</time>
-              </article>
-            </li>
-            <li class="blog__item blog__item--trends">
-              <article class="blog__article blog-article blog-article--trends">
-                <h3>AW 19 trends</h3>
-                <a href="#">Read Article</a>
-                <time datetime="2019-09-16">September 16, 2019</time>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="faq">
-        <div class="faq__wrapper container">
-          <h2>Frequently asked questions</h2>
-          <ul class="faq__list faq__list--nojs same-list">
-            <li class="faq__item faq__item--opened">
-              <button class="faq__title" type="button">What materials are the jewellery made of?</button>
-              <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-            </li>
-            <li class="faq__item">
-              <button class="faq__title" type="button">Which countries do you deliver to?</button>
-              <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-            </li>
-            <li class="faq__item">
-              <button class="faq__title" type="button">What are the payment methods?</button>
-              <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-            </li>
-            <li class="faq__item">
-              <button class="faq__title faq__title--return" type="button">Can I return the jewellery if it didn’t fit me?</button>
-              <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="follow-us">
-        <div class="follow-us__wrapper container">
-          <h2><span>@</span>Chjewellery</h2>
-          <a href="#">Follow Us</a>
-          <ul class="follow-us__list same-list">
-            <li class="follow-us__item follow-us__item--first">
-              <picture>
-                <!--1x: 230x230; 2x: 460x460-->
-                <source type="image/webp" srcset="img/gallery/1@1x.webp 1x, img/gallery/1@2x.webp 2x">
-                <img src="img/gallery/1@1x.jpg" srcset="img/gallery/1@2x.jpg 2x" width="230" height="230" alt="jewelry collection">
-              </picture>
-              <picture>
-                <!--1x: 230x154; 2x: 460x308-->
-                <source type="image/webp" srcset="img/gallery/2@1x.webp 1x, img/gallery/2@2x.webp 2x">
-                <img src="img/gallery/2@1x.jpg" srcset="img/gallery/2@2x.jpg 2x" width="230" height="154" alt="jewelry collection">
-              </picture>
-            </li>
-
-            <li class="follow-us__item follow-us__item--second">
-              <picture>
-                <!--1x: 400x414; 2x: 800x828-->
-                <source type="image/webp" srcset="img/gallery/3@1x.webp 1x, img/gallery/3@2x.webp 2x">
-                <img src="img/gallery/3@1x.jpg" srcset="img/gallery/3@2x.jpg 2x" width="400" height="414" alt="jewelry collection">
-              </picture>
-            </li>
-
-            <li class="follow-us__item follow-us__item--third">
-              <picture>
-                <!--1x: 232x193; 2x: 464x386-->
-                <source type="image/webp" srcset="img/gallery/4@1x.webp 1x, img/gallery/4@2x.webp 2x">
-                <img src="img/gallery/4@1x.jpg" srcset="img/gallery/4@2x.jpg 2x" width="232" height="193" alt="jewelry collection">
-              </picture>
-              <picture>
-                <!--1x: 218x191; 2x: 436x382-->
-                <source type="image/webp" srcset="img/gallery/5@1x.webp 1x, img/gallery/5@2x.webp 2x">
-                <img src="img/gallery/5@1x.jpg" srcset="img/gallery/5@2x.jpg 2x" width="218" height="191" alt="jewelry collection">
-              </picture>
-            </li>
-
-            <li class="follow-us__item follow-us__item--fourth">
-              <picture>
-                <!--1x: 218x218; 2x: 436x436-->
-                <source type="image/webp" srcset="img/gallery/6@1x.webp 1x, img/gallery/6@2x.webp 2x">
-                <img src="img/gallery/6@1x.jpg" srcset="img/gallery/6@2x.jpg 2x" width="218" height="218" alt="jewelry collection">
-              </picture>
-              <picture>
-                <!--1x: 232x166; 2x: 464x332-->
-                <source type="image/webp" srcset="img/gallery/7@1x.webp 1x, img/gallery/7@2x.webp 2x">
-                <img src="img/gallery/7@1x.jpg" srcset="img/gallery/7@2x.jpg 2x" width="232" height="166" alt="jewelry collection">
-              </picture>
-            </li>
-          </ul>
         </div>
       </section>
     </main>

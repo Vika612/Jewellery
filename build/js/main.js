@@ -17,26 +17,6 @@
 }());
 
 
-/* FAQ */
-
-(function () {
-  var faqList = document.querySelector('.faq__list');
-
-  faqList.classList.remove('faq__list--nojs');
-
-  if (faqList) {
-    var toggleFaqItem = function (item) {
-      item.classList.toggle('faq__item--opened');
-    };
-
-    faqList.addEventListener('click', function (evt) {
-      var faqItem = evt.target.closest('li');
-      toggleFaqItem(faqItem);
-    });
-  }
-}());
-
-
 /* FILTER */
 
 (function () {
@@ -116,4 +96,24 @@
     },
   });
   swiper.slideNext();
+}());
+
+
+/* FAQ */
+
+(function () {
+  var faqList = document.querySelector('.faq__list');
+
+  faqList.classList.remove('faq__list--nojs');
+
+  if (faqList) {
+    var toggleFaqItem = function (item) {
+      item.classList.toggle('faq__item--opened');
+    };
+
+    faqList.addEventListener('click', function (evt) {
+      var faqItem = evt.target.closest('li');
+      toggleFaqItem(faqItem);
+    });
+  }
 }());
