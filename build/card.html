@@ -81,10 +81,79 @@
     </header>
 
     <main>
+      <h1 class="visually-hidden">Photos and product information</h1>
+      <section class="card">
+        <div class="card__wrapper container">
+          <div class="card__photo card-photos">
+            <div class="card-photos__full">
+              <picture>
+                <!--1x: 470x435; 2x: 940x870-->
+                <source type="image/webp" srcset="img/card/necklace-detail@1x.webp 1x, img/card/necklace-detail@2x.webp 2x">
+                <img src="img/card/necklace-detail@1x.jpg" srcset="img/card/necklace-detail@2x.jpg 2x" width="470" height="435" alt="gold necklace">
+              </picture>
+            </div>
+            <ul class="card-photos__list same-list">
+              <li class="card-photos__item">
+                <picture>
+                  <!--1x: 100x125; 2x: 200x250-->
+                  <source type="image/webp" srcset="img/card/gold-necklace-for-women@1x.webp 1x, img/card/gold-necklace-for-women@2x.webp 2x">
+                  <img src="img/card/gold-necklace-for-women@1x.jpg" srcset="img/card/gold-necklace-for-women@2x.jpg 2x" width="100" height="125" alt="gold necklace">
+                </picture>
+              </li>
+              <li class="card-photos__item">
+                <picture>
+                  <!--1x: 100x125; 2x: 200x250-->
+                  <source type="image/webp" srcset="img/card/pretty-gold-necklace@1x.webp 1x, img/card/pretty-gold-necklace@2x.webp 2x">
+                  <img src="img/card/pretty-gold-necklace@1x.jpg" srcset="img/card/pretty-gold-necklace@2x.jpg 2x" width="100" height="125" alt="gold necklace">
+                </picture>
+              </li>
+              <li class="card-photos__item">
+                <picture>
+                  <!--1x: 100x125; 2x: 200x250-->
+                  <source type="image/webp" srcset="img/card/womens-necklace-set@1x.webp 1x, img/card/womens-necklace-set@2x.webp 2x">
+                  <img src="img/card/womens-necklace-set@1x.jpg" srcset="img/card/womens-necklace-set@2x.jpg 2x" width="100" height="125" alt="gold necklace">
+                </picture>
+              </li>
+            </ul>
+          </div>
 
+          <div class="card__info card-info">
+            <h2>Gold Necklace </h2>
+            <span>$ 115</span>
+            <div class="card-info__tabs-wrapper">
+              <input class="visually-hidden" id="tab-1" name="tab" type="radio">
+              <input class="visually-hidden" id="tab-2" name="tab" type="radio" checked="">
+              <label for="tab-1" tabindex="0">Description</label>
+              <label for="tab-2" tabindex="0">Additional info</label>
+              <div class="card-info__content card-info__content--desc">
+                <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+              </div>
+              <div class="card-info__content card-info__content--add">
+                <dl>
+                  <dt>Metal type</dt>
+                  <dd>Gold 585</dd>
+                </dl>
+                <dl>
+                  <dt>Stone</dt>
+                  <dd>Turquoise</dd>
+                </dl>
+                <dl>
+                  <dt>Size</dt>
+                  <dd>18” / 20”</dd>
+                </dl>
+              </div>
+            </div>
+            <a class="card-info__button" href="#">Add to cart</a>
+            <ul class="card-info__conditions same-list">
+              <li>14 Day Returns</li>
+              <li>2-Year Warranty</li>
+              <li>Free Shipping</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-
-      <section class="new">
+      <section class="new new--card">
         <div class="new__wrapper container">
           <h2>You May Also Like</h2>
           <a class="new__link" href="catalog.html">Shop Now</a>

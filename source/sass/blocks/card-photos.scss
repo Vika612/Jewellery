@@ -1,0 +1,32 @@
+.card-photos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.card-photos img {
+  display: block;
+}
+
+.card-photos__full {
+  max-width: 470px;
+  height: 435px;
+}
+
+.card-photos__item {
+  width: 100px;
+  height: 125px;
+}
+
+.card-photos__full img,
+.card-photos__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-photos__list {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
