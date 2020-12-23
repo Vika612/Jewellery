@@ -5,11 +5,11 @@
 
 .card-info h2 {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: $serif;
   font-weight: 700;
   font-size: 34px;
-  line-height: 1.2;
+  line-height: 0.9;
   color: $black-2;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .card-info__tabs-wrapper label {
-  margin-right: 20px;
+  margin: 0 20px 17px 0;
   padding: 15px 15px 15px 0;
   color: $grey;
   cursor: pointer;
@@ -61,15 +61,17 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
 }
 
 .card-info dl {
-  margin-bottom: 25px;
+  margin: 0;
+  margin-bottom: 5px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid $light-brown;
 }
 
 .card-info__button {
   max-width: 370px;
-  margin-bottom: 20px;
-  margin-top: auto;
+  margin: auto 0 22px;
   padding: 24px;
   background: $brown;
   border: 1px solid $brown;
@@ -92,4 +94,59 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
   font-size: 14px;
   line-height: 1.2;
   color: $grey;
+}
+
+@media (max-width: 1023px) {
+  .card-info h2 {
+    margin-bottom: 20px;
+    line-height: 0.7;
+  }
+
+  .card-info span {
+    margin-bottom: 26px;
+  }
+
+  .card-info__button {
+    margin-bottom: 16px;
+  }
+
+  .card-info__conditions li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-info h2 {
+    margin-bottom: 25px;
+  }
+
+  .card-info span {
+    margin-bottom: 15px;
+  }
+
+  .card-info__tabs-wrapper {
+    margin-bottom: 22px;
+  }
+
+  .card-info__tabs-wrapper label {
+    margin: 0 24px 17px 0;
+  }
+
+  .card-info dl {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+  }
+
+  .card-info__conditions {
+    padding: 0 10px;
+  }
+
+  .card-info__conditions li {
+    margin-right: 55px;
+    text-align: center;
+  }
+
+  .card-info__conditions li:last-child {
+    margin-right: 0;
+  }
 }
