@@ -66,6 +66,54 @@
 }());
 
 
+/* ADD-TO-CART */
+(function () {
+  var ESC = 27;
+  var cartOpenBtn = document.querySelector('.card-info__button');
+
+  if (cartOpenBtn) {
+    var cartModal = document.querySelector('.cart');
+    var cartCloseBtn = document.querySelector('.cart__close');
+
+    var openModal = function () {
+      cartModal.classList.add('cart--show');
+      document.body.style.overflow = 'hidden';
+      window.addEventListener('keydown', onModalEscPress);
+      cartCloseBtn.addEventListener('click', function () {
+        closeModal();
+      });
+    };
+
+    var closeModal = function () {
+      if (cartModal.classList.contains('cart--show')) {
+        cartModal.classList.remove('cart--show');
+        document.body.style.overflow = '';
+      }
+      window.removeEventListener('keydown', onModalEscPress);
+    };
+
+    var onModalEscPress = function (evt) {
+      if (evt.keyCode === ESC) {
+        evt.preventDefault();
+        closeModal();
+      }
+    };
+
+    cartOpenBtn.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      openModal();
+    });
+
+    cartModal.addEventListener('click', function (evt) {
+      var cartContent = cartModal.querySelector('.cart__wrapper');
+      if (!cartContent.contains(evt.target)) {
+        closeModal();
+      }
+    });
+  }
+}());
+
+
 /* SLIDER */
 
 (function () {

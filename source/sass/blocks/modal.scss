@@ -1,0 +1,14 @@
+.modal--static.cart {
+  position: static;
+  height: 100vh;
+  display: block;
+}
+
+.modal--static .cart__wrapper {
+  position: static;
+  transform: none;
+}
+
+.modal--static .cart__close {
+  display: none;
+}
