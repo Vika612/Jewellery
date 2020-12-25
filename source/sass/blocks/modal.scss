@@ -4,11 +4,18 @@
   display: block;
 }
 
-.modal--static .cart__wrapper {
+.modal--static .cart__wrapper,
+.modal--static .login__content {
   position: static;
   transform: none;
 }
 
-.modal--static .cart__close {
+.modal--static .cart__close,
+.modal--static .login__close {
   display: none;
+}
+
+.modal--static.login {
+  position: static;
+  display: block;
 }

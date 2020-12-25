@@ -2885,13 +2885,185 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
   height: 100vh;
   display: block; }
 
-.modal--static .cart__wrapper {
+.modal--static .cart__wrapper,
+.modal--static .login__content {
   position: static;
   -webkit-transform: none;
           transform: none; }
 
-.modal--static .cart__close {
+.modal--static .cart__close,
+.modal--static .login__close {
   display: none; }
+
+.modal--static.login {
+  position: static;
+  display: block; }
+
+.login {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #ffffff;
+  display: none; }
+  .login--show {
+    display: block; }
+
+.login__content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 430px;
+  padding: 180px 45px 20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url("../img/bg/login_desk@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  background-color: #f0eae4; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .login__content {
+      background-image: url("../img/bg/login_desk@2x.jpg"); } }
+
+.login__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: block;
+  border: none;
+  cursor: pointer; }
+  .login__close:hover, .login__close:focus {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+
+.login h2 {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.3;
+  color: #1d1613;
+  text-align: center; }
+
+.login__item {
+  width: 100%;
+  margin-bottom: 30px; }
+  .login__item--password {
+    margin-bottom: 0; }
+
+.login__item--button {
+  margin-top: 50px;
+  text-align: center; }
+
+.login__item button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 23px;
+  color: #ffffff;
+  background-color: #a87b62;
+  border: none;
+  cursor: pointer; }
+  .login__item button:hover, .login__item button:focus {
+    color: #1d1613;
+    background-color: #f0eae4;
+    border: 1px solid #a87b62; }
+
+.login input {
+  width: 100%;
+  padding: 10px 20px 10px 0;
+  background-color: #f0eae4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #1d1613; }
+
+.login input::-webkit-input-placeholder,
+.login__item span {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #9b9997; }
+
+.login input::-moz-placeholder,
+.login__item span {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #9b9997; }
+
+.login input:-ms-input-placeholder,
+.login__item span {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #9b9997; }
+
+.login input::-ms-input-placeholder,
+.login__item span {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #9b9997; }
+
+.login input::placeholder,
+.login__item span {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #9b9997; }
+
+.login__link {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1d1613; }
+
+.login__link--password {
+  display: block;
+  font-size: 12px;
+  color: #9b9997;
+  text-align: right; }
+
+@media (max-width: 1023px) {
+  .login__content {
+    width: 442px;
+    padding: 180px 50px 30px;
+    background-image: url("../img/bg/login_tab@1x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .login__content {
+      background-image: url("../img/bg/login_tab@2x.jpg"); } }
+
+@media (max-width: 767px) {
+  .login__content {
+    top: 50%;
+    width: 270px;
+    padding: 110px 15px 20px;
+    background-image: url("../img/bg/login_mob@1x.jpg"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .login__content {
+      background-image: url("../img/bg/login_mob@2x.jpg"); } }
+
+@media (max-width: 767px) {
+  .login__close {
+    top: 15px;
+    right: 15px; }
+  .login h2 {
+    margin-bottom: 20px;
+    font-size: 24px; }
+  .login__item {
+    margin-bottom: 20px; }
+    .login__item--password {
+      margin-bottom: 0; }
+  .login__item--button {
+    margin-top: 40px; }
+  .login__item button {
+    margin-bottom: 20px; } }
 
 .cart {
   position: fixed;
@@ -2915,7 +3087,7 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
   display: block;
   border: none;
   background-color: transparent;
-  background-image: url("../img/cart-close.svg");
+  background-image: url("../img/modal-close.svg");
   background-repeat: no-repeat;
   cursor: pointer; }
   .cart__close:hover, .cart__close:focus {
