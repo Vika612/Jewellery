@@ -266,6 +266,9 @@ body {
   .container {
     padding: 0 15px; } }
 
+.header {
+  margin-bottom: 20px; }
+
 .header__wrapper {
   position: relative; }
 
@@ -274,7 +277,7 @@ body {
 
 .header__top {
   position: relative;
-  padding: 41px 0;
+  padding: 41px 0 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,6 +312,8 @@ body {
   fill: #a87b62; }
 
 @media (max-width: 1023px) {
+  .header {
+    margin-bottom: 0; }
   .header__burger {
     display: block; }
     .header__burger:hover, .header__burger:focus {
@@ -849,8 +854,7 @@ body {
 .intro__slogan {
   position: relative;
   z-index: 7;
-  padding-top: 180px;
-  padding-bottom: 50px;
+  padding-top: 185px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -863,14 +867,14 @@ body {
           align-items: center; }
 
 .intro__slogan--catalog {
-  padding-top: 95px; }
+  padding-top: 90px; }
 
 .intro__slogan h2 {
   margin: 0;
   font-family: "Cormorant Garamond", "Georgia", serif;
   font-weight: 700;
   font-size: 45px;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   color: #ffffff; }
 
@@ -2343,8 +2347,6 @@ button.swiper-pagination-bullet {
   position: relative;
   margin-bottom: 10px;
   padding-left: 25px; }
-  .filter__checkbox-item:focus-within {
-    outline: #3b99fc auto 5px; }
 
 .filter__checkbox-label {
   font-size: 14px;
@@ -2951,7 +2953,7 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
   top: 50%;
   left: 50%;
   width: 430px;
-  padding: 180px 45px 20px;
+  padding: 180px 45px 40px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-image: url("../img/bg/login_desk@1x.jpg");
@@ -2996,29 +2998,13 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
   .login__item--password {
     margin-bottom: 0; }
 
-.login__item--button {
-  margin-top: 50px;
-  text-align: center; }
-
-.login__item button {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 23px;
-  color: #ffffff;
-  background-color: #a87b62;
-  border: none;
-  cursor: pointer; }
-  .login__item button:hover, .login__item button:focus {
-    color: #1d1613;
-    background-color: #f0eae4;
-    border: 1px solid #a87b62; }
-
 .login input {
   width: 100%;
   padding: 10px 20px 10px 0;
   background-color: #f0eae4;
   -webkit-box-shadow: none;
           box-shadow: none;
+  outline: none;
   border-radius: 0;
   border: none;
   border-bottom: 1px solid #1d1613; }
@@ -3054,15 +3040,41 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
   color: #9b9997; }
 
 .login__link {
+  margin-bottom: 50px;
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #9b9997;
+  text-align: right; }
+  .login__link:hover, .login__link:focus {
+    opacity: 0.7; }
+
+.login__form button {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 23px;
+  color: #ffffff;
+  background-color: #a87b62;
+  border: none;
+  cursor: pointer; }
+  .login__form button:hover, .login__form button:focus {
+    color: #1d1613;
+    background-color: #f0eae4;
+    border: 1px solid #a87b62; }
+
+.login__sign-up {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #9b9997;
+  text-align: center; }
+
+.login__sign-up a {
+  padding-left: 5px;
   font-size: 14px;
   line-height: 1.5;
   color: #1d1613; }
-
-.login__link--password {
-  display: block;
-  font-size: 12px;
-  color: #9b9997;
-  text-align: right; }
+  .login__sign-up a:hover, .login__sign-up a:focus {
+    opacity: 0.7; }
 
 @media (max-width: 1023px) {
   .login__content {
@@ -3077,7 +3089,7 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
   .login__content {
     top: 50%;
     width: 270px;
-    padding: 110px 15px 20px;
+    padding: 110px 15px 25px;
     background-image: url("../img/bg/login_mob@1x.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .login__content {
@@ -3094,10 +3106,8 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
     margin-bottom: 20px; }
     .login__item--password {
       margin-bottom: 0; }
-  .login__item--button {
-    margin-top: 40px; }
-  .login__item button {
-    margin-bottom: 20px; } }
+  .login__link {
+    margin-bottom: 40px; } }
 
 .cart {
   position: fixed;

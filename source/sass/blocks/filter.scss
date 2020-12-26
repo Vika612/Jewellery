@@ -69,10 +69,6 @@
   position: relative;
   margin-bottom: 10px;
   padding-left: 25px;
-
-  &:focus-within {
-    outline: rgb(59, 153, 252) auto 5px;
-  }
 }
 
 .filter__checkbox-label {
