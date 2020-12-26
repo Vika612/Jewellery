@@ -4,30 +4,32 @@
 }
 
 .footer__wrapper {
-  padding: 90px 15px 80px;
+  padding: 90px 15px 60px;
   display: flex;
   justify-content: space-between;
 }
 
 .footer__subscribe {
   flex-basis: 45%;
+  max-width: 500px;
 }
 
 .footer__feedback {
   flex-basis: 55%;
-  margin-left: 50px;
+  margin-left: 60px;
   display: flex;
   justify-content: space-between;
 }
 
 @media (max-width: 1023px) {
   .footer__wrapper {
-    padding: 50px 150px 40px 45px;
+    padding: 48px 150px 40px 45px;
     flex-direction: column;
   }
 
   .footer__subscribe {
     flex-basis: 100%;
+    max-width: 98%;
   }
 
   .footer__feedback {
@@ -38,7 +40,7 @@
 
 @media (max-width: 767px) {
   .footer__wrapper {
-    padding: 50px 15px 50px 15px;
+    padding: 50px 15px 15px;
   }
 
   .footer__feedback {

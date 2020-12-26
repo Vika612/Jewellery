@@ -1,5 +1,6 @@
 .feedback {
-  padding: 10px 0 0 40px;
+  max-width: 580px;
+  padding: 8px 0 0 0;
 }
 
 .feedback ul {
@@ -9,7 +10,7 @@
 }
 
 .feedback li {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .feedback a {
@@ -26,12 +27,13 @@
   margin-right: 20px;
 }
 
-.feedback__social {
-  margin-left: 40px;
+.feedback__info {
+  margin-right: 20px;
 }
 
 @media (max-width: 1023px) {
   .feedback {
+    max-width: 100%;
     padding: 50px 0 0 0;
   }
 
@@ -41,20 +43,12 @@
 }
 
 @media (max-width: 767px) {
+  .feedback ul {
+    margin-bottom: 20px;
+  }
+
   .feedback ul:last-child {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  .feedback__social {
-    margin-left: 0;
-  }
-
-  .feedback__services {
-    margin-bottom: 25px;
-  }
-
-  .feedback__info {
-    margin-bottom: 30px;
   }
 }

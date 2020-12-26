@@ -1,6 +1,6 @@
 .subscribe h2 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-family: $serif;
   font-size: 34px;
   line-height: 1.3;
@@ -46,7 +46,7 @@
 }
 
 .subscribe__sign-up button {
-  width: 170px;
+  width: 135px;
   padding: 0;
   color: $white;
   cursor: pointer;
@@ -59,10 +59,14 @@
 
 @media (max-width: 767px) {
   .subscribe h2 {
-    max-width: 215px;
+    padding-right: 50px;
   }
 
   .subscribe p {
-    max-width: 230px;
+    padding-right: 40px;
+  }
+
+  .subscribe__sign-up button {
+    width: 170px;
   }
 }
