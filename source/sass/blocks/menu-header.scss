@@ -1,3 +1,7 @@
+.menu-header ul {
+  @include reset-list;
+}
+
 .menu-header__info,
 .menu-header__link {
   display: none;

@@ -30,6 +30,7 @@
 }
 
 .follow-us__list {
+  @include reset-list;
   margin-top: 65px;
   display: flex;
   justify-content: space-between;

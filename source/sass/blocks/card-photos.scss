@@ -5,6 +5,7 @@
 }
 
 .card-photos__list {
+  @include reset-list;
   margin-right: 30px;
   display: flex;
   flex-direction: column;

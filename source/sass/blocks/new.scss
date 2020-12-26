@@ -11,6 +11,10 @@
   padding-bottom: 30px;
 }
 
+.new__slider ul {
+  @include reset-list;
+}
+
 .new h2 {
   margin: 0;
   margin-bottom: 25px;

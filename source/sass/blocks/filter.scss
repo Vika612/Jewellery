@@ -16,6 +16,10 @@
   }
 }
 
+.filter__block ul {
+  @include reset-list;
+}
+
 .filter__block--price {
   margin-bottom: 35px;
   border-bottom: 1px solid $brown;

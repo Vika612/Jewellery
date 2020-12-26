@@ -86,6 +86,7 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
 }
 
 .card-info__conditions {
+  @include reset-list;
   display: flex;
   justify-content: space-between;
 }

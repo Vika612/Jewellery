@@ -15,6 +15,7 @@
 }
 
 .paginator__list {
+  @include reset-list;
   display: flex;
   margin-left: -33px;
 }

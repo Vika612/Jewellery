@@ -1,4 +1,5 @@
 .catalog {
+  @include reset-list;
   max-width: 870px;
   display: flex;
   flex-wrap: wrap;
