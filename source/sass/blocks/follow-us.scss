@@ -36,10 +36,6 @@
   justify-content: space-between;
 }
 
-.follow-us__list img {
-  display: block;
-}
-
 .follow-us__item {
   display: flex;
   flex-direction: column;
@@ -58,6 +54,10 @@
   align-items: flex-end;
 }
 
+.follow-us__list img {
+  display: block;
+}
+
 @media (max-width: 1170px) {
   .follow-us__item--fourth {
     margin-left: 15px;
@@ -69,12 +69,12 @@
     margin-bottom: 83px;
   }
 
-  .follow-us__list {
-    margin-top: 60px;
-  }
-
   .follow-us span {
     font-size: 42px;
+  }
+
+  .follow-us__list {
+    margin-top: 60px;
   }
 
   .follow-us__item--second {

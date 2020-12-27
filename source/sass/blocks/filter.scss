@@ -18,6 +18,7 @@
 
 .filter__block ul {
   @include reset-list;
+  margin: 20px 0 0 10px;
 }
 
 .filter__block--price {
@@ -25,11 +26,20 @@
   border-bottom: 1px solid $brown;
 }
 
+.filter input[type="checkbox"]:checked ~ .filter__title::before {
+  transform: rotate(45deg);
+}
+
+.filter input[type="checkbox"]:checked ~ .filter__title::after {
+  transform: rotate(-45deg);
+}
+
 .filter__title {
   position: relative;
   display: block;
   color: $black-2;
   cursor: pointer;
+
 
   &:hover,
   &:focus {
@@ -57,18 +67,14 @@
   }
 }
 
-.filter input[type="checkbox"]:checked ~ .filter__title::before {
-  transform: rotate(45deg);
-}
-
-.filter input[type="checkbox"]:checked ~ .filter__title::after {
-  transform: rotate(-45deg);
-}
-
 .filter__checkbox-item {
   position: relative;
   margin-bottom: 10px;
   padding-left: 25px;
+}
+
+.filter__checkbox-item input[type="checkbox"]:checked + .filter__checkbox-indicator {
+  background-color: $brown;
 }
 
 .filter__checkbox-label {
@@ -78,7 +84,7 @@
   cursor: pointer;
 
   &:hover,
-  &:focus {
+  &:focus-within {
     color: $brown;
   }
 }
@@ -90,16 +96,6 @@
   width: 15px;
   height: 15px;
   border: 1px solid $brown;
-}
-
-.filter__checkbox-item input[type="checkbox"]:checked + .filter__checkbox-indicator {
-  background-color: $brown;
-}
-
-.filter__list {
-  margin-left: 9px;
-  padding: 0;
-  padding-top: 20px;
 }
 
 .filter__list,

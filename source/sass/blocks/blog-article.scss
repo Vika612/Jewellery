@@ -14,13 +14,6 @@
   align-self: flex-end;
 }
 
-.blog-article time {
-  order: -1;
-  margin-bottom: 15px;
-  font-size: 14px;
-  color: $grey;
-}
-
 .blog-article h3 {
   margin: 0;
   margin-bottom: 35px;
@@ -45,6 +38,13 @@
     transform: scaleX(1.1);
     transition: 0.6s;
   }
+}
+
+.blog-article time {
+  order: -1;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: $grey;
 }
 
 @media (max-width: 1023px) {

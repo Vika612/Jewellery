@@ -4,20 +4,7 @@
 }
 
 .main-catalog__toggle {
-  max-width: 678px;
-  margin-bottom: 50px;
-  padding: 23px;
-  color: $white;
-  background-color: $brown;
-  border: 1px solid $brown;
-  text-align: center;
-  cursor: pointer;
   display: none;
-
-  &:hover,
-  &:focus {
-    opacity: 0.9;
-  }
 }
 
 @media (max-width: 1023px) {
@@ -38,7 +25,20 @@
   }
 
   .main-catalog__toggle {
+    max-width: 678px;
+    margin-bottom: 50px;
+    padding: 23px;
     display: block;
+    color: $white;
+    background-color: $brown;
+    border: 1px solid $brown;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-within {
+      opacity: 0.7;
+    }
   }
 
   .main-catalog__toggle--opened {

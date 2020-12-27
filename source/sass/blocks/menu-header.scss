@@ -2,11 +2,6 @@
   @include reset-list;
 }
 
-.menu-header__info,
-.menu-header__link {
-  display: none;
-}
-
 .menu-header__navigation {
   padding: 19px 0;
   display: flex;
@@ -26,6 +21,11 @@
     transform: scaleX(1.1);
     transition: 0.6s;
   }
+}
+
+.menu-header__info,
+.menu-header__link {
+  display: none;
 }
 
 @media (max-width: 1023px) {
@@ -53,8 +53,8 @@
     }
   }
 
-  .menu-header__info,
-  .menu-header__link {
+  .menu-header__info {
+    margin-bottom: 45px;
     display: block;
   }
 
@@ -70,10 +70,6 @@
     &:focus {
       opacity: 0.6;
     }
-  }
-
-  .menu-header__info {
-    margin-bottom: 45px;
   }
 
   .menu-header__info a {
