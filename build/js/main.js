@@ -215,6 +215,39 @@
 }());
 
 
+/* CALCULATE ITEM */
+
+(function () {
+  var ACTION = {
+    PLUS: 'plus',
+    MINUS: 'minus'
+  };
+
+  var calculateItem = function (action) {
+    var input = document.getElementById('number');
+
+    switch (action) {
+      case ACTION.PLUS:
+        input.value++;
+        break;
+      case ACTION.MINUS:
+        input.value--;
+        break;
+    }
+  };
+
+  document.getElementById('cart').addEventListener('click', function (event) {
+    if (event.target.classList.contains('cart__button--increase')) {
+      calculateItem(ACTION.PLUS);
+    }
+
+    if (event.target.classList.contains('cart__button--decrease')) {
+      calculateItem(ACTION.MINUS);
+    }
+  });
+}());
+
+
 /* SLIDER */
 
 (function () {
