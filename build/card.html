@@ -426,14 +426,14 @@
           </div>
           <div class="cart__counter">
             <button class="cart__button cart__button--increase" type="button" aria-label="increase"></button>
-            <input type="text" name="number" id="number" value="1" readonly="">
+            <input type="text" name="number" id="number" value="1" data-price="115" readonly="">
             <button class="cart__button cart__button--decrease" type="button" aria-label="decrease"></button>
           </div>
         </div>
       </div>
       <div class="cart__output">
         <p>You have 1 item in the cart</p>
-        <b>Cart subtotal: $ 115</b>
+        <b>Cart subtotal: $ <span class="cart__subtotal">115</span></b>
       </div>
       <div class="cart__links">
         <a class="cart__link cart__link--continue" href="catalog.html">Continue shopping</a>

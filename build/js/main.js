@@ -223,6 +223,13 @@
     MINUS: 'minus'
   };
 
+  var cart = document.getElementById('cart');
+  var subTotal = document.querySelector('.cart__subtotal');
+
+  var getItemSubTotalPrice = function (input) {
+    return Number(input.value) * Number(input.dataset.price);
+  };
+
   var calculateItem = function (action) {
     var input = document.getElementById('number');
 
@@ -234,17 +241,21 @@
         input.value--;
         break;
     }
+
+    subTotal.textContent = getItemSubTotalPrice(input);
   };
 
-  document.getElementById('cart').addEventListener('click', function (event) {
-    if (event.target.classList.contains('cart__button--increase')) {
-      calculateItem(ACTION.PLUS);
-    }
+  if (cart) {
+    cart.addEventListener('click', function (event) {
+      if (event.target.classList.contains('cart__button--increase')) {
+        calculateItem(ACTION.PLUS);
+      }
 
-    if (event.target.classList.contains('cart__button--decrease')) {
-      calculateItem(ACTION.MINUS);
-    }
-  });
+      if (event.target.classList.contains('cart__button--decrease')) {
+        calculateItem(ACTION.MINUS);
+      }
+    });
+  }
 }());
 
 
