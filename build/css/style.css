@@ -2420,20 +2420,24 @@ button.swiper-pagination-bullet {
   padding-left: 37px; }
 
 .filter__max-price {
-  padding-left: 60px; }
+  padding-left: 70px; }
 
 .filter__min-price input,
 .filter__max-price input {
-  width: 25px;
+  width: 30px;
   font-size: 14px;
   font-weight: 500;
-  border: none; }
+  border: none;
+  background-color: transparent; }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
           appearance: none;
   margin: 0; }
+
+input[type="number"] {
+  -moz-appearance: textfield; }
 
 .filter__submit,
 .filter__reset {
@@ -2962,9 +2966,18 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
   color: #1d1613;
   text-align: center; }
 
+.login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 .login__form button {
   width: 100%;
-  margin-bottom: 5px;
+  margin-top: auto;
   padding: 23px;
   color: #ffffff;
   background-color: #a87b62;
@@ -3024,11 +3037,12 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
 
 .login__link {
   margin-bottom: 50px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   display: block;
   font-size: 12px;
   line-height: 1.5;
-  color: #9b9997;
-  text-align: right; }
+  color: #9b9997; }
   .login__link:hover, .login__link:focus {
     opacity: 0.7; }
 

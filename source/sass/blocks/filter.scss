@@ -169,15 +169,16 @@
 }
 
 .filter__max-price {
-  padding-left: 60px;
+  padding-left: 70px;
 }
 
 .filter__min-price input,
 .filter__max-price input {
-  width: 25px;
+  width: 30px;
   font-size: 14px;
   font-weight: 500;
   border: none;
+  background-color: transparent;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
