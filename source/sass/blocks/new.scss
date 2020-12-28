@@ -73,17 +73,16 @@
   position: absolute;
   top: 35px;
   border: none;
-  padding: 0;
   background-color: transparent;
   cursor: pointer;
 }
 
 .new__item-prev-button {
-  left: 0;
+  left: 5px;
 }
 
 .new__item-next-button {
-  right: 15px;
+  right: 10px;
 }
 
 .new__item-button svg {
