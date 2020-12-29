@@ -72,7 +72,7 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
 .card-info__button {
   max-width: 370px;
   margin: auto 0 22px;
-  padding: 24px;
+  padding: 23px;
   background: $brown;
   border: 1px solid $brown;
   color: $white;
@@ -87,6 +87,7 @@ input[id="tab-2"]:checked ~ .card-info__content--add {
 
 .card-info__conditions {
   @include reset-list;
+  //margin-top: 15px;
   display: flex;
   justify-content: space-between;
 }

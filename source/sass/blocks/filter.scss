@@ -164,21 +164,21 @@
   font-size: 14px;
 }
 
+.filter__min-price input,
+.filter__max-price input {
+  width: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+}
+
 .filter__min-price {
   padding-left: 37px;
 }
 
 .filter__max-price {
-  padding-left: 60px;
-}
-
-.filter__min-price input,
-.filter__max-price input {
-  width: 30px;
-  font-size: 14px;
-  font-weight: 500;
-  border: none;
-  background-color: transparent;
+  padding-left: 42px;
 }
 
 input[type="number"]::-webkit-outer-spin-button,

@@ -31,7 +31,11 @@
 @media (max-width: 1023px) {
   .menu-header {
     width: 100%;
-    padding: 75px 0;
+    padding: 90px 0 77px;
+  }
+
+  .menu-header ul {
+    margin-bottom: 25px;
   }
 
   .menu-header__navigation {
@@ -54,7 +58,6 @@
   }
 
   .menu-header__info {
-    margin-bottom: 45px;
     display: block;
   }
 
@@ -77,20 +80,21 @@
   }
 
   .menu-header__link {
+    margin-top: 40px;
     opacity: 1;
   }
 }
 
 @media (max-width: 767px) {
   .menu-header {
-    padding: 65px 0 45px;
+    padding: 85px 0 45px;
   }
 
-  .menu-header__navigation {
-    padding-bottom: 10px;
+  .menu-header ul {
+    margin-bottom: 10px;
   }
 
-  .menu-header__info {
-    margin-bottom: 35px;
+  .menu-header__link {
+    margin-top: 35px;
   }
 }

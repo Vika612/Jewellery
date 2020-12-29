@@ -9,13 +9,17 @@
 .catalog__item {
   max-width: 270px;
   width: 31%;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .catalog__item img {
   width: 100%;
   height: 272px;
   display: block;
+}
+
+.catalog__item h3 {
+  margin-top: 20px;
 }
 
 @media (max-width: 1023px) {
@@ -49,5 +53,9 @@
 @media (max-width: 320px) {
   .catalog {
     justify-content: space-between;
+  }
+
+  .catalog__item {
+    margin-bottom: 5px;
   }
 }

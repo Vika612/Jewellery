@@ -16,7 +16,7 @@
 
 .cart__wrapper {
   position: relative;
-  top: 590px;
+  top: 50%;
   left: 50%;
   width: 500px;
   padding: 50px 35px;
@@ -213,11 +213,6 @@
   .cart__wrapper {
     top: 52%;
     padding: 51px 30px;
-  }
-
-  .cart__close {
-    top: 15px;
-    right: 15px;
   }
 
   .cart__wrapper h2 {

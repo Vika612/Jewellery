@@ -1,6 +1,6 @@
 .card {
   margin-top: 80px;
-  margin-bottom: 120px;
+  margin-bottom: 125px;
 }
 
 .card__wrapper {
@@ -21,10 +21,6 @@
 @media (max-width: 1023px) {
   .card {
     margin: 30px auto 75px;
-  }
-
-  .card__wrapper {
-    justify-content: space-around;
   }
 
   .card__info {
