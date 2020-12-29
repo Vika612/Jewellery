@@ -677,10 +677,10 @@ body {
 
 .subscribe__sign-up input {
   width: 100%;
-  padding: 10px 0; }
+  padding: 10px 0;
+  color: #ffffff; }
   .subscribe__sign-up input:hover, .subscribe__sign-up input:focus {
-    outline: none;
-    color: #ffffff; }
+    outline: none; }
 
 .subscribe__sign-up input::-webkit-input-placeholder {
   font-size: 14px;
