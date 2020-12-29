@@ -4,6 +4,7 @@
 
 (function () {
   var headerBody = document.querySelector('.header__wrapper');
+  var headerMenu = document.querySelector('.header__menu');
   var burger = document.querySelector('.burger');
 
   if (headerBody) {
@@ -11,7 +12,9 @@
 
     if (burger) {
       burger.addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
         headerBody.classList.toggle('header__wrapper--js');
+        headerMenu.classList.toggle('header__menu--js');
         burger.classList.toggle('active');
       });
     }
