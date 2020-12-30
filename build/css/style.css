@@ -2119,7 +2119,7 @@ button.swiper-pagination-bullet {
       right: 10px;
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg); }
-  .faq__item--delivery {
+  .faq__title--delivery {
     padding-right: 85px; }
   .faq__title--return {
     padding-right: 37px; }
